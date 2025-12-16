@@ -1,0 +1,49 @@
+---
+title: "Example analysis"
+author: "My Name"
+date: "`r Sys.Date()`"
+format: 
+    html:
+        embed-resources: true
+        toc: true
+        toc_float: true
+        keep-md: true
+---
+
+## Introduction
+
+Here we can add a description of the analysis. 
+
+## Load packages
+
+We can load some packages we need.
+
+```{r load-pkg}
+suppressPackageStartupMessages({
+    library(dplyr)
+    library(ggplot2)
+})
+```
+
+## Analysis
+
+And then we do some analysis
+
+```{r plot-penguins}
+ggplot(penguins, aes(x = flipper_len, y = bill_len, color = species)) + 
+    geom_point() + 
+    theme_bw()
+```
+
+## Session info
+
+Finally, we record the versions of the packages we used.
+
+<details>
+<summary><b>
+Session info
+</b></summary>
+```{r session-info}
+sessionInfo()
+```
+</details>
