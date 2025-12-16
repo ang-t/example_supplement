@@ -1,0 +1,55 @@
+---
+title: "Paper title"
+subtitle: "Analysis code for figures"
+date: today
+author:
+  - name: My Name
+    orcid: 0000-0000-0000-0000
+    email: my.email@fmi.ch
+    affiliations:
+      - ref: fmi
+  - name: Another Author
+    orcid: 0000-0000-0000-0000
+    email: their.email@fmi.ch
+    affiliations:
+      - ref: fmi
+      - ref: unibas
+affiliations:
+  - id: fmi
+    name: Friedrich Miescher Institute for Biomedical Research
+    address: Fabrikstrasse 24
+    postal-code: 4056
+    city: Basel
+    country: Switzerland
+  - id: unibas
+    name: University of Basel
+    address: Petersplatz 10
+    postal-code: 4003
+    city: Basel
+    country: Switzerland
+license: MIT license
+format:
+    html:
+        embed-resources: true
+        fig-cap-location: top
+---
+
+<style>
+.author {
+  font-size: 1em;
+}
+
+.affiliation {
+  font-size: 1em;
+}
+</style>
+
+## Link to paper
+
+Here is our paper!
+
+## Links to code
+
+|          |                            |
+|----------|----------------------------|
+| Analysis 1 | [![](example_analysis_files/figure-html/plot-penguins-1.png){width="5cm"}](example_analysis.html) |
